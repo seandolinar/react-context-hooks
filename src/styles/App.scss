@@ -1,0 +1,20 @@
+html, body {
+    box-sizing: border-box;
+    * {
+        box-sizing: inherit;
+    }
+}
+
+pre {
+    white-space: normal;
+}
+
+ul, ul li {
+    list-style: none;
+    padding: 0;
+}
+
+ol, ol li {
+    padding: 0;
+}
+
