@@ -6,13 +6,13 @@ import {ContextItem} from './context';
 
 const DataContainer = ({children}) => {
 
-    const [data, setData] = useState({});
-    const [appParam, setAppParam] = useState({tz: 'utc'});
+    const [data, setData] = useState({datetime: ''});
+    const [appParam, setAppParam] = useState({tz: 'UTC'});
 
    
     // HANDLES DATA
     const getData = () => {
-        fetch(`http://worldclockapi.com/api/json/${appParam.tz}/now`).then(res => res.json().then(json => setData(json))) 
+        fetch(`https://worldtimeapi.org/api/timezone/${appParam.tz}`).then(res => res.json().then(json => setData(json))) 
     }
 
     useEffect(() => {

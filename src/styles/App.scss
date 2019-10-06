@@ -3,6 +3,7 @@ html, body {
     * {
         box-sizing: inherit;
     }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 pre {
@@ -16,5 +17,23 @@ ul, ul li {
 
 ol, ol li {
     padding: 0;
+}
+
+div {
+    text-align: center;
+    padding: 1em 0;
+}
+
+button {
+    font-size: 1.2em;
+    appearance: none;
+    background-color: #ccc;
+    padding: .2em 1em;
+    margin: 0 1em;
+
+    &.is-active {
+        background-color: #06c;
+        color: #fff;
+    }
 }
 

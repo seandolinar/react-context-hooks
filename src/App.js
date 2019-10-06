@@ -7,13 +7,9 @@ import Presentation from '@components/Presentation';
 
 import './styles/App.scss';
 
-const App = () => {
-    
-    return <DataContainer>
+const App = () => <DataContainer>
         <Controls />
         <Presentation />
     </DataContainer>
-}
-
 
 export default App

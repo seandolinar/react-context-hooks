@@ -9,12 +9,12 @@ const Controls = () => {
 
     return <div>
         <button
-            className={appParam.tz === 'utc' ? 'is-active' : ''}
-            onClick={() => methods.handleAppParamChange({tz: 'utc'})}
+            className={appParam.tz === 'UTC' ? 'is-active' : ''}
+            onClick={() => methods.handleAppParamChange({tz: 'UTC'})}
         >UTC</button>
         <button
-            className={appParam.tz === 'est' ? 'is-active' : ''}
-            onClick={() => methods.handleAppParamChange({tz: 'est'})}
+            className={appParam.tz === 'EST' ? 'is-active' : ''}
+            onClick={() => methods.handleAppParamChange({tz: 'EST'})}
         >EST</button>
     </div>
 

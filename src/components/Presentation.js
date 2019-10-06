@@ -9,7 +9,7 @@ const Presentation = () => {
 
     const {data, appParam} = useContext(ContextItem);
 
-    return <div>The current time for {data.timeZoneName} is: {data.currentDateTime}</div>
+    return <div>The current time for {data.timezone} is: {data.datetime.slice(0, 16)}</div>
 
 }
 
