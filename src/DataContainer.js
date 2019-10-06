@@ -8,16 +8,22 @@ const DataContainer = ({children}) => {
 
    
 
-    useEffect(() => {
+    const getData = () => {
+        fetch('http://worldclockapi.com/api/json/est/now').then(res => res.json().then(json => console.log(json))) 
+    }
 
+
+
+    useEffect(() => {
+        getData();
     }, [])
 
 
-    return <ContextBlock.Provider 
+    return <ContextItem.Provider 
         // value={}
     >
         {children}
-    </ContextBlock.Provider>
+    </ContextItem.Provider>
 }
 
 export default DataContainer
