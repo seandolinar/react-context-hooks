@@ -17,8 +17,9 @@ const DataContainer = ({children}) => {
 
     useEffect(() => {
         getData(); // This hooks gets the data once after the component mounts
-    }, [appParam.tz])
+    }, [appParam.tz]) // this will run again when the tz prop changes
 
+    // HANDLES EVENTS / STATE MANIPULATION
     const handleAppParamChange = (obj) => {
 
         const newAppParam = Object.assign({}, appParam, obj);
